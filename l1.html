@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <style></style>
+  </head>
+  <body>
+
+    <!--
+    Q1
+    <script>
+      var endereco = {
+        rua: 'Rua dos pinheiros',
+        numero: 1293,
+        bairro: 'Centro',
+        cidade: 'São Paulo',
+        uf: 'SP'
+      };
+
+      function rEnd() {
+        var end = 'O usuário mora em ' + endereco.cidade + ' / ' + endereco.uf + ' no bairro ' + endereco.bairro + ', na rua "' + endereco.rua + '" com nº ' + endereco.numero + '.'
+        return end
+      }
+      console.log(rEnd())
+    </script>
+    -->
+
+    <!--
+    Q2
+    <script>
+      function parXY(x, y) {
+        if(x >= y) {
+          for(var i = x-y; i < x; i++) {
+            if(i%2 == 0) {
+              console.log(i)
+            }
+          }
+        } else {
+          for(var i = y-x; i < y; i++) {
+            if(i%2 == 0) {
+              console.log(i)
+            }
+          }
+        }
+      }
+      parXY(5, 10)
+    </script>
+    -->
+
+    <!--
+    Q3
+    <script>
+      function temHabilidade(skills) {
+        return (skills.indexOf('Javascript') != -1) ? true : false;
+      }
+      var skills = ['Javascript', 'ReactJS', 'React Native'];
+      console.log(temHabilidade(skills)); // true ou false
+    </script>
+    -->
+
+    <!--
+    Q4
+    <script>
+      function experiencia(anos) {
+        if(anos >= 0 && anos <= 1) {
+          return 'Iniciante'
+        } else if(anos >= 1 && anos <= 3) {
+          return 'Intermediário'
+        } else if(anos >= 3 && anos <= 6) {
+          return 'Avançado'
+        } else if(anos >= 7) {
+          return 'Jedi Master'
+        } else {
+          return 'Entrada inválida!'
+        }
+      }
+
+      var anosEstudo = 2;
+      console.log(experiencia(anosEstudo));
+
+      // De 0-1 ano: Iniciante
+      // De 1-3 anos: Intermediário
+      // De 3-6 anos: Avançado
+      // De 7 acima: Jedi Master
+    </script>
+    -->
+
+    <!--
+    Q5
+    <script>
+      var usuarios = [
+        {
+          nome: 'Diego',
+          habilidades: ['Javascript', 'ReactJS', 'Redux']
+        },
+        {
+          nome: 'Gabriel',
+          habilidades: ['VueJS', 'Ruby on Rails', 'Elixir']
+        }
+      ];
+
+      function listarHabilidades(users) {
+        for(user of users) {
+          console.log('O '+user.nome+' possui as habilidades: '+user.habilidades.join(', '));
+        }
+      }
+      listarHabilidades(usuarios)
+    </script>
+    -->
+
+    <!--
+    Q6
+    <script>
+      function countdown(minutos) {
+        //var h = (minutos/60)|0;
+        //var m = minutos%60;
+        var s = minutos*60;
+        var time = new Date(0, 0, 0, 0, 0, s);
+        
+        interval = setInterval(function() {
+          console.log(time.getHours()+':'+time.getMinutes()+':'+time.getSeconds());
+          (s > 0) ? s -= 1 : s = clearInterval(interval);
+          time = new Date(0, 0, 0, 0, 0, s);
+        }, 1000);
+
+      }
+
+      countdown(1);
+
+      // 70 minutos equivalem a 1 hora e 10 minutos
+
+      // 01:10:00
+      // 01:09:59
+      // 01:09:58
+      // 01:09:57
+      // 01:09:56
+    </script>
+    -->
+
+  </body>
+</html>
